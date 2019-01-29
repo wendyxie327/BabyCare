@@ -1,5 +1,5 @@
 import 'package:babycare/util/global_config.dart';
-import 'package:babycare/widght/home_page.dart';
+import 'package:babycare/widget/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -20,8 +20,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.green,
         textSelectionColor: Colors.black26,
+        primaryColor: Colors.pink.shade300,
+        primarySwatch: Colors.pink
       ),
       home: new HomePage() ,
     );
