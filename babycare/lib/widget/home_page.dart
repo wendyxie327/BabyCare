@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:babycare/util/global_config.dart';
 import 'package:babycare/widget/home_content_template.dart';
+import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -11,14 +11,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(GlobalConfig.appName),
-        centerTitle: true,
-      ),
-      body: new Column(
-        children: homeBody(),
-      ),
-    );
+        appBar: new AppBar(
+          title: new Text(GlobalConfig.appName),
+          centerTitle: true,
+        ),
+        body: new ListView(
+          children: homeBody()
+        ));
   }
 
   // 首页显示内容
