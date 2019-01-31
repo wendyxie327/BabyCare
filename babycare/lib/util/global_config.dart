@@ -7,27 +7,27 @@ class GlobalConfig {
   // 不重要的显示内容颜色
   static Color colorNote = Colors.black54;
 
-  static Color IconFeedColor = Color(0xffefb336);
-  static Color IconNappyColor = Color(0xff1195db);
-  static Color IconSleepColor = Color(0xff24b1a9);
-  static Color IconStatureColor = Color(0xffa686ba);
-
+  static Color primaryColor = Colors.pink[300];
+  static Color iconFeedColor = Color(0xffefb336);
+  static Color iconNappyColor = Color(0xff1195db);
+  static Color iconSleepColor = Color(0xff24b1a9);
+  static Color iconStatureColor = Color(0xffa686ba);
 
   // 获取模块对应颜色
   static getModelColor(String title){
     Color selectColor;
     switch(title){
       case "喂养":
-        selectColor = IconFeedColor;
+        selectColor = iconFeedColor;
         break;
-      case "尿布":
-        selectColor = IconNappyColor;
+      case "尿片":
+        selectColor = iconNappyColor;
         break;
       case "睡眠":
-        selectColor = IconSleepColor;
+        selectColor = iconSleepColor;
         break;
       case "身高":
-        selectColor = IconStatureColor;
+        selectColor = iconStatureColor;
         break;
     }
 
